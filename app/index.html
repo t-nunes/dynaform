@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <!-- App Style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- My Custom Styles -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-xs-push-4">
+                <div class="js-integrationForm"></div>
+            </div>
+
+            <div class="col-xs-4 col-xs-push-4">
+                <a href="" class="js-integrationForm2">Form 2</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/dynaform.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var options = {
+                'token': '62bb61431348e22850828a5829c4373faafe29c1',
+                'secret': '51a266c2844ccd5cac83d88de88d82d05358aa51',
+                'modal': false,
+                'fields': {
+                    'estado': ['PR', 'SC', 'SP', 'RS'],
+                    'nivel': [
+                        'Iniciante',
+                        'Intermediário',
+                        'Avançado',
+                        'Ninja'
+                    ]
+                }
+            }
+
+            var form = $('.js-integrationForm').dynaform(options);
+
+            var options2 = {
+                'token': '62bb61431348e22850828a5829c4373faafe29c1',
+                'secret': '51a266c2844ccd5cac83d88de88d82d05358aa51',
+                'modal': true,
+                'modalTitle': 'Formulário 2',
+                'fields': {
+                    'estado': ['PR', 'SC', 'SP', 'RS'],
+                    'nivel': [
+                        'Iniciante',
+                        'Intermediário',
+                        'Avançado',
+                        'Ninja'
+                    ]
+                }
+            }
+
+            var form = $('.js-integrationForm2').dynaform(options2);
+
+        })
+    </script>
+
+
+</body>
+</html>
+

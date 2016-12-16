@@ -1,0 +1,14 @@
+{
+  "name": "dynaform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "app": "node_modules/.bin/nodemon App.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  }
+}
