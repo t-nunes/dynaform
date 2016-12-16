@@ -1,6 +1,20 @@
 ## Introdução
 Este código foi criado para fornecer uma maneira simples de construir um formulário
 
+## Instalação
+
+```
+    git clone https://github.com/thiagofront/dynaform.git   // clona o projeto
+    cd dynaform                                             // entra na pasta
+    npm install                                             // instala as dependencias
+    npm run app                                             // inicia o servidor
+```
+
+Servidor vai ficar escutando a porta 3030 do seu localhost `http://localhost:3030`
+
+## Tests
+para abrir os testes é só navegar para o arquivo `SpecRunner.html` localizado na raiz do projeto e clicar 2x
+
 ## Exemplo de código
 
 ```html
@@ -34,18 +48,6 @@ Este código foi criado para fornecer uma maneira simples de construir um formul
 </html>
 
 ```
-
-## Instalação
-
-com o projeto clonado na sua maquina é só rodar os seguintes comandos
-```
-npm install
-```
-em seguida o comando
-```
-npm run app
-```
-que inicia o servidor que ficará escutando a porta 3030 do seu localhost `http://localhost:3030`
 
 
 #### Dependências
@@ -88,7 +90,3 @@ $dynaform.message(Msg);     // retorna uma mensagem em HTML
         'modalTitle'    : 'Modal Title',                    // title of modal
     }
 ```
-
-
-## Tests
-para abrir os testes é só navegar para o arquivo `SpecRunner.html` localizado na raiz do projeto e clicar 2x
