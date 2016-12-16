@@ -67,7 +67,7 @@ esse projeto depende do jquery e bootstrap por favor instale ou utilize os cdns
 ## API Reference
 
 ##### Methods
-```html
+```javascript
 var $dynaform = $('.js-target').dynaform({
     modal: true,
     modalTitle: 'Título Modal'
